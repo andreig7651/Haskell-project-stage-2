@@ -1,0 +1,48 @@
+Gavriliu Andrei-Mihai 323CB
+
+Milestone 2
+
+Identic cu primul milestone,am gandit rezolvarea pe pasi mici,apoi am combinat totul intr-o singura functie.In readme voi descrie pasii implementarii
+
+Task 1 
+    - get_position - functie ce primeste un nume de coloana si o tabela si intoarce pozitia din tabela;
+                   - am folosit functia predefinita elemIndex ce intoarce un Maybe Int pe care l-am castat apoi in Int;
+
+    - cmp_columns - functie ce sorteaza o tabela dupa o coloana;
+                  - pentru a sti dupa ce linie se face comparatia,inainte de prima linie,am inserat o linie ce contine
+                  pozitia coloanei dupa care se face ordonarea;
+    
+    - cmp_first - compara elementele din prima coloana;
+
+    - tsort - functie ce sorteaza o tabela dupa o anumita coloana;
+            - aflam pozitia coloanei dupa care se face ordonarea si o convertim la string;
+            - eliminam din tabela prima linie,cea cu numele coloanelor,dar adaugam o linie noua cu pozitia dupa care se va face sortarea;
+            - sortam tabela folosind functia sortBy si cmp_columns;
+
+Task 2
+    - list_compare - functie ce compara 2 liste si intoarce True daca sunt identice sau False in caz contrar;
+    - vunion - daca tabelele au aceleasi coloane,completam t1 cu t2;in caz contrar intoarcem t1;
+
+Task 3
+    - generate2 - functie ce intoarce o lista ce contine size caractere "";
+    - generate1 - functie ce completeaza o tabela cu liste/randuri ce contin doar caracterul "";
+    - hunion - functie ce primeste 2 tabele si le uneste orizontal;
+             - comparam dimensiunile celor 2 tabele si o completam cu caracterul "" pe cea mai scurta apoi le unim cu zipWith;
+             - daca au aceeasi dimensiune doar le unim;
+
+Task 4
+
+Task 5
+    - aplicam new_row_function pe intotdeauna pe prima lista din t1 si t2,iar la fiecare pas o eliminam folosind tail;
+
+Task 6
+    - get_position1 - functie ce intoarce pozitia unui element dintr-o lista (!! nu din antetul unei tabele)
+    - get_pos - functie ce intoarce o lista cu pozitiile elementelor din prima lista in cea de a doua;
+    - prj - functie ce primeste lista de pozitii si tabela din care extrage coloanele respective in ordinea pozitiilor,sub forma de tabela;
+    - generate - functie ce genereaza o tabela cu size liste vide si va genera un acumulator pentru foldr;
+    - aflam pozitiile coloanelor ce trebuiesc extrase din lista si le extragem folosind prj;
+    - folosim foldr si extragem coloanele din tabela;
+
+Task 7
+    - filtram tabela folosind filter si filtram tabela dupa conditia data,doar pe coloana cu numele specificat;
+
